@@ -1,4 +1,7 @@
 
+body{
+    background-color: antiquewhite;
+}
 .content{
     background-color: rgb(59, 59, 59);
     display: flex;
@@ -23,6 +26,7 @@
 }
 .button-controls{
     display: flex;
+    flex: 1;
 
 }
 .left-buttons{
@@ -30,31 +34,33 @@
     flex-direction: column;
     gap: 20px;
     flex-grow: 8;
+    
 }
 .right-buttons{
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 .button-row{
     display: flex;
     gap: 20px;
+    flex-grow: 1;
 }
 
-.num-button{
-    padding: 20px;
-    flex-grow: 5;
+.button{
+    padding: 10px;
     flex-shrink: 0;
     flex-basis: 30px;
-    margin: 20px;
+    margin: 10px;
+    font-size: 32px;
+}
+.num-button{
+    flex-grow: 5;
+
 
 }
 .operator-button{
-    padding: 20px;
     flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 30px;
-    margin: 20px;
-
 }
