@@ -1,6 +1,8 @@
 
 body{
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
 .content{
     background-color: rgb(59, 59, 59);
@@ -9,13 +11,15 @@ body{
     margin: 0;
     border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-grow: 1;
+    flex-basis: 100%;
 
 }
 .operation-screen{
     background-color: white;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 50px;
+    flex-basis: 90px;
     margin: 20px;
     font-family: 'Calculator', sans-serif;
     font-size: 72px;
@@ -61,6 +65,6 @@ body{
 
 
 }
-.operator-button{
+.operator-button,.result-button{
     flex-grow: 1;
 }

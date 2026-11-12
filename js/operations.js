@@ -1,13 +1,14 @@
 function operate(num1,operator,num2) {
+    clearView()
     switch (operator) {
         case "*":
-            return multiply(num1,num2);
+            return [multiply(num1,num2),"",""];
         case "-":
-            return subtract(num1,num2);
+            return [subtract(num1,num2),"",""];
         case "+":
-            return add(num1,num2);
+            return [add(num1,num2),"",""];
         case "/":
-            return  divide(num1,num2);
+            return  [divide(num1,num2),"",""];
     }
 }
 
@@ -25,6 +26,10 @@ function subtract(num1,num2) {
 
 }
 function divide(num1,num2) {
+    if(num2=== 0){
+        updateView("nice try doofus!")
+        return ""
+    }
     return num1 / num2;
 
 }
