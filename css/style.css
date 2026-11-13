@@ -65,6 +65,6 @@ body{
 
 
 }
-.operator-button,.result-button{
+.operator-button,.result-button,.dot-button{
     flex-grow: 1;
 }
