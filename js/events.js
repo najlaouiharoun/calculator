@@ -30,6 +30,7 @@ function handleEvents(num1,operator,num2) {
         } else if (isValidOperatorInput(target,num1) && operator === "" ){
             num2 = num1
             num1 = ""
+            num2 = ""
             operator = getInput(target)         
             updateView(operator)
             operationDone = false
