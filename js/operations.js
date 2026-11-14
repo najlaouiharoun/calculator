@@ -27,7 +27,7 @@ function subtract(num1,num2) {
 }
 function divide(num1,num2) {
     if(num2=== 0){
-        updateView("nice try doofus!")
+        updateView(ZERO_DIVISION)
         return ""
     }
     return num1 / num2;

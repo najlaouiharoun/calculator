@@ -1,5 +1,5 @@
 function getInput(target){
-    return target.textContent
+    return  target.key || target.textContent
 }
 
 function getOperationScreen() {
@@ -7,7 +7,3 @@ function getOperationScreen() {
 }
 
 
-
-function getOperator(input) {
-    return input
-}

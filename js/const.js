@@ -1,0 +1,5 @@
+const ZERO_DIVISION = "nice try doofus!"
+const NUMBERS = "1234567890"
+const DOT = "."
+const OPERATOR = "-+*/"
+const EQUALS = "="
