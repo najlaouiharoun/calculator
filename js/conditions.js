@@ -16,5 +16,5 @@ function isValidOperatorInputKey(target,num){
 }
 
 function isOperatableKey(target,num1,operator,num2) {
-    return (target.key === "Enter" || target === "=") && operator !==""&& num1 !=="" && num2 !==""&& num1 !=="-"
+    return (target.key === "Enter" || target.key === "=") && operator !==""&& num1 !=="" && num2 !==""&& num1 !=="-"
 }
