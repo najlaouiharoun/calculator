@@ -6,7 +6,8 @@ function isValidOperatorInput(target,num){
 }
 
 function isOperatable(target,num1,operator,num2) {
-    return target.id === "button-=" && operator !==""&& num1 !=="" && num2 !==""&& num1 !=="-"
+    console.log(target,num1,operator,num2)
+    return target.id === "button-="  && operator !=="" && num1 !=="" && num2 !==""&& num1 !=="-"
 }
 function isValidNumInputKey(target,num) {
     return NUMBERS.includes(target.key) || (target.key === "-" && num === "") || (target.key === "." && num !== "" && !String(num).includes("."))
@@ -16,5 +17,5 @@ function isValidOperatorInputKey(target,num){
 }
 
 function isOperatableKey(target,num1,operator,num2) {
-    return (target.key === "Enter" || target.key === "=") && operator !==""&& num1 !=="" && num2 !==""&& num1 !=="-"
+    return (target.key === "Enter" || target.key === "=") && operator !=="" && num1 !=="" && num2 !==""&& num1 !=="-"
 }

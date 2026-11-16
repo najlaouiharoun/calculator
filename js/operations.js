@@ -6,6 +6,8 @@ function operate(num1,operator,num2) {
         case "-":
             return [subtract(num1,num2),"",""];
         case "+":
+            console.log([add(num1,num2),"",""]);
+            
             return [add(num1,num2),"",""];
         case "/":
             return  [divide(num1,num2),"",""];

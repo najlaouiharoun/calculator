@@ -6,6 +6,7 @@ function handleEvents(num1,operator,num2) {
         clearDoofus()
 
         if(isValidNumInput(target,num1) && operationDone ===true ){
+
             if (target.id !== "button-dot" ) {
             [num2,operator,num1] = clearAll()
             operationDone = false
@@ -18,6 +19,7 @@ function handleEvents(num1,operator,num2) {
   
             
         } else if(isValidNumInput(target,num1)){
+
             num1 += getInput(target)
             updateView(getInput(target))
 
@@ -30,13 +32,14 @@ function handleEvents(num1,operator,num2) {
         } else if (isValidOperatorInput(target,num1) && operator === "" ){
             num2 = num1
             num1 = ""
-            num2 = ""
             operator = getInput(target)         
             updateView(operator)
             operationDone = false
 
 
         } else if(isValidOperatorInput(target,num1)&& num2 !=="" ){
+                        console.log("i'm an error");
+
             [num2,operator,num1] = operate(+num2,operator,+num1)
             clearView()
             updateView(num2)
@@ -46,10 +49,14 @@ function handleEvents(num1,operator,num2) {
 
 
         } else if(isOperatable(target,num1,operator,num2)){
+            console.log("i'm an error");
+            
             [num2,operator,num1] = operate(+num2,operator,+num1)
             updateView(num2)
             num1 = num2
             operator = ""
+            num2 = ""
+
             operationDone = true
         }else if(target.id === "button-del" && num1 !== ""){
             num1 = String(num1).slice(0,-1)
@@ -100,6 +107,7 @@ function handleEvents(num1,operator,num2) {
         } else if (isValidOperatorInputKey(target,num1) && operator === "" ){
             num2 = num1
             num1 = ""
+
             operator = getInput(target)         
             updateView(operator)
             operationDone = false
